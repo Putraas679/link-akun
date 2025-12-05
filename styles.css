@@ -1,0 +1,145 @@
+/* ======================================= */
+/* 1. STYLING DASAR & LATAR BELAKANG GALAKSI */
+/* ======================================= */
+
+/* ======================================= */
+/* 1. STYLING DASAR & LATAR BELAKANG FOTO */
+/* ======================================= */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+
+  /* PENTING: Pengaturan untuk Background Foto */
+  /* Pastikan 'nama-foto-anda.jpg' diganti dengan nama file foto yang benar */
+  background-image: url("image.jpg/image.png");
+  background-size: cover; /* Memastikan foto menutupi seluruh layar */
+  background-attachment: fixed; /* Foto tetap saat di-scroll (opsional) */
+  background-position: center center; /* Memastikan foto berpusat */
+
+  /* JIKA BACKGROUND ADALAH FOTO, HAPUS ANIMASI DI BAWAH INI */
+  /* animation: none; */
+}
+
+/* Hapus juga @keyframes galaxyGlow { ... } jika Anda tidak menggunakannya lagi */
+/* Animasi untuk latar belakang */
+@keyframes galaxyGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Kontainer utama (The Card) */
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 25px;
+  text-align: center;
+  /* Efek Card Dark Mode dan Neon Shadow */
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 255, 255, 0.25);
+  border: 1px solid #00ffff;
+  backdrop-filter: blur(8px);
+}
+
+/* ======================================= */
+/* 2. AREA PROFIL */
+/* ======================================= */
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #fbfbfd;
+  box-shadow: 0 0 20px rgba(93, 0, 255, 0.9);
+}
+
+.username {
+  margin: 5px 0 5px 0;
+  color: #f6f9f6; /* Neon Green */
+  font-size: 2em;
+  text-shadow: 0 0 8px rgb(8, 0, 255);
+}
+
+.tagline {
+  margin-bottom: 30px;
+  color: #f8f9f8;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* ======================================= */
+/* 3. TOMBOL LINK */
+/* ======================================= */
+
+.link-button {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background: #252525;
+  padding: 18px;
+  margin: 18px 0;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+.link-button:hover {
+  background: #fcfcfc;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.6);
+}
+
+/* Gaya ikon */
+.link-button i {
+  margin-right: 12px;
+  font-size: 1.3em;
+}
+
+/* Warna unik untuk tombol */
+.instagram {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  border: none;
+}
+.instagram:hover {
+  box-shadow: 0 8px 25px rgba(71, 170, 212, 0.934);
+}
+
+.tiktok {
+  background-color: #000;
+  border: 2px solid #f6f7f8;
+}
+.tiktok:hover {
+  background-color: #fafbfb;
+  color: #000;
+}
+
+.roblox-profile,
+.roblox-map {
+  background-color: #092ae1;
+  border: none;
+}
+.roblox-profile:hover,
+.roblox-map:hover {
+  background-color: #f9f9fc;
+  color: #080808;
+}
